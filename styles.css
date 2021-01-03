@@ -178,7 +178,19 @@ h3 {
   bottom: -7px;
   left: 48%;
 }
-
+.feedbacks h2 {
+  position: relative;
+}
+.feedbacks h2::after {
+  content: "";
+  position: absolute;
+  background: red;
+  border-radius: 20%;
+  height: 5px;
+  width: 4%;
+  bottom: -7px;
+  left: 48%;
+}
 .exclusives {
   text-align: center;
   background: radial-gradient(#fff, #fafad2);
@@ -230,7 +242,7 @@ hr {
 }
 .btn {
   position: relative;
-  left: 50%;
+  left: 45%;
   top: 50px;
   margin-top: 20px;
   padding: 10px;
@@ -265,6 +277,35 @@ i {
 .header-container {
   position: fixed;
   width: 100%;
+}
+.feedbacks {
+  text-align: center;
+  margin-top: 50px;
+}
+.feedbacks .col-3 {
+  padding: 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.feedbacks .col-3:hover {
+  transform: scale(1.05);
+}
+.feedbacks .customer-img {
+  height: 100px;
+  width: 100px;
+}
+.rating {
+  margin-top: 10px;
+}
+.fa-star,
+.fa-star-o,
+.fa-star-half-empty {
+  color: #d78b52;
+}
+.fa.fa-quote-left {
+  color: #d78b52;
+  font-size: 25px;
 }
 @media only screen and (max-width: 600px) {
   .row {
